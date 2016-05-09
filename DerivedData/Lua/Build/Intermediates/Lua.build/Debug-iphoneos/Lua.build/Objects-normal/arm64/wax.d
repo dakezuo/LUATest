@@ -1,5 +1,5 @@
 dependencies: /Users/dake/Desktop/LUATest/Lua/wax/wax.m \
-  /Users/dake/Desktop/LUATest/Lua/wax/ProtocolLoader.h \
+  /Users/dake/Desktop/LUATest/Lua/ProtocolLoader.h \
   /Users/dake/Desktop/LUATest/Lua/wax/wax.h \
   /Users/dake/Desktop/LUATest/Lua/wax/lua/lua.h \
   /Users/dake/Desktop/LUATest/Lua/wax/lua/luaconf.h \

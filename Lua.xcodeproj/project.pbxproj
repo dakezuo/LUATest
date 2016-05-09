@@ -71,7 +71,8 @@
 		29F24C401CE02A0000D2EB0E /* wax_instance.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F24C051CE02A0000D2EB0E /* wax_instance.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		29F24C411CE02A0000D2EB0E /* wax_server.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F24C071CE02A0000D2EB0E /* wax_server.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		29F24C421CE02A0000D2EB0E /* wax_struct.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F24C0A1CE02A0000D2EB0E /* wax_struct.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		29F24C461CE0370A00D2EB0E /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29F24C451CE0370A00D2EB0E /* ZipArchive.mm */; };
+		29F24C4B1CE05FA500D2EB0E /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29F24C4A1CE05FA500D2EB0E /* ZipArchive.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		29F24C4D1CE060DE00D2EB0E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F24C4C1CE060DE00D2EB0E /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -219,9 +220,10 @@
 		29F24C081CE02A0000D2EB0E /* wax_stdlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wax_stdlib.h; sourceTree = "<group>"; };
 		29F24C091CE02A0000D2EB0E /* wax_struct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wax_struct.h; sourceTree = "<group>"; };
 		29F24C0A1CE02A0000D2EB0E /* wax_struct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = wax_struct.m; sourceTree = "<group>"; };
-		29F24C431CE0337F00D2EB0E /* ProtocolLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolLoader.h; sourceTree = "<group>"; };
-		29F24C441CE0370A00D2EB0E /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
-		29F24C451CE0370A00D2EB0E /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
+		29F24C481CE05FA500D2EB0E /* ProtocolLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolLoader.h; sourceTree = "<group>"; };
+		29F24C491CE05FA500D2EB0E /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		29F24C4A1CE05FA500D2EB0E /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
+		29F24C4C1CE060DE00D2EB0E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29F24C4D1CE060DE00D2EB0E /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +255,7 @@
 		29F24B521CE0291B00D2EB0E = {
 			isa = PBXGroup;
 			children = (
+				29F24C4C1CE060DE00D2EB0E /* libz.tbd */,
 				29F24B5D1CE0291B00D2EB0E /* Lua */,
 				29F24B771CE0291B00D2EB0E /* LuaTests */,
 				29F24B821CE0291C00D2EB0E /* LuaUITests */,
@@ -272,6 +276,9 @@
 		29F24B5D1CE0291B00D2EB0E /* Lua */ = {
 			isa = PBXGroup;
 			children = (
+				29F24C481CE05FA500D2EB0E /* ProtocolLoader.h */,
+				29F24C491CE05FA500D2EB0E /* ZipArchive.h */,
+				29F24C4A1CE05FA500D2EB0E /* ZipArchive.mm */,
 				29F24B921CE02A0000D2EB0E /* minizip */,
 				29F24B9C1CE02A0000D2EB0E /* wax */,
 				29F24B611CE0291B00D2EB0E /* AppDelegate.h */,
@@ -333,9 +340,6 @@
 		29F24B9C1CE02A0000D2EB0E /* wax */ = {
 			isa = PBXGroup;
 			children = (
-				29F24C441CE0370A00D2EB0E /* ZipArchive.h */,
-				29F24C451CE0370A00D2EB0E /* ZipArchive.mm */,
-				29F24C431CE0337F00D2EB0E /* ProtocolLoader.h */,
 				29F24B9D1CE02A0000D2EB0E /* extensions */,
 				29F24BC61CE02A0000D2EB0E /* lua */,
 				29F24BFC1CE02A0000D2EB0E /* wax.h */,
@@ -667,7 +671,6 @@
 				29F24C401CE02A0000D2EB0E /* wax_instance.m in Sources */,
 				29F24C371CE02A0000D2EB0E /* ltm.c in Sources */,
 				29F24C2F1CE02A0000D2EB0E /* lopcodes.c in Sources */,
-				29F24C461CE0370A00D2EB0E /* ZipArchive.mm in Sources */,
 				29F24C151CE02A0000D2EB0E /* wax_json.c in Sources */,
 				29F24C2E1CE02A0000D2EB0E /* lobject.c in Sources */,
 				29F24C391CE02A0000D2EB0E /* lvm.c in Sources */,
@@ -677,6 +680,7 @@
 				29F24C311CE02A0000D2EB0E /* lparser.c in Sources */,
 				29F24C231CE02A0000D2EB0E /* ldebug.c in Sources */,
 				29F24C191CE02A0000D2EB0E /* yajl_encode.c in Sources */,
+				29F24C4B1CE05FA500D2EB0E /* ZipArchive.mm in Sources */,
 				29F24C0E1CE02A0000D2EB0E /* zip.c in Sources */,
 				29F24C241CE02A0000D2EB0E /* ldo.c in Sources */,
 				29F24C3D1CE02A0000D2EB0E /* wax_class.m in Sources */,
@@ -840,10 +844,12 @@
 		29F24B891CE0291C00D2EB0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lua/WaxPatch-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Lua/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -855,10 +861,12 @@
 		29F24B8A1CE0291C00D2EB0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lua/WaxPatch-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Lua/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

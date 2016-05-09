@@ -20,7 +20,6 @@
 /Users/dake/Desktop/LUATest/DerivedData/Lua/Build/Intermediates/Lua.build/Debug-iphoneos/Lua.build/Objects-normal/arm64/wax_instance.o
 /Users/dake/Desktop/LUATest/DerivedData/Lua/Build/Intermediates/Lua.build/Debug-iphoneos/Lua.build/Objects-normal/arm64/ltm.o
 /Users/dake/Desktop/LUATest/DerivedData/Lua/Build/Intermediates/Lua.build/Debug-iphoneos/Lua.build/Objects-normal/arm64/lopcodes.o
-/Users/dake/Desktop/LUATest/DerivedData/Lua/Build/Intermediates/Lua.build/Debug-iphoneos/Lua.build/Objects-normal/arm64/ZipArchive.o
 /Users/dake/Desktop/LUATest/DerivedData/Lua/Build/Intermediates/Lua.build/Debug-iphoneos/Lua.build/Objects-normal/arm64/wax_json.o
 /Users/dake/Desktop/LUATest/DerivedData/Lua/Build/Intermediates/Lua.build/Debug-iphoneos/Lua.build/Objects-normal/arm64/lobject.o
 /Users/dake/Desktop/LUATest/DerivedData/Lua/Build/Intermediates/Lua.build/Debug-iphoneos/Lua.build/Objects-normal/arm64/lvm.o
@@ -30,6 +29,7 @@
 /Users/dake/Desktop/LUATest/DerivedData/Lua/Build/Intermediates/Lua.build/Debug-iphoneos/Lua.build/Objects-normal/arm64/lparser.o
 /Users/dake/Desktop/LUATest/DerivedData/Lua/Build/Intermediates/Lua.build/Debug-iphoneos/Lua.build/Objects-normal/arm64/ldebug.o
 /Users/dake/Desktop/LUATest/DerivedData/Lua/Build/Intermediates/Lua.build/Debug-iphoneos/Lua.build/Objects-normal/arm64/yajl_encode.o
+/Users/dake/Desktop/LUATest/DerivedData/Lua/Build/Intermediates/Lua.build/Debug-iphoneos/Lua.build/Objects-normal/arm64/ZipArchive.o
 /Users/dake/Desktop/LUATest/DerivedData/Lua/Build/Intermediates/Lua.build/Debug-iphoneos/Lua.build/Objects-normal/arm64/zip.o
 /Users/dake/Desktop/LUATest/DerivedData/Lua/Build/Intermediates/Lua.build/Debug-iphoneos/Lua.build/Objects-normal/arm64/ldo.o
 /Users/dake/Desktop/LUATest/DerivedData/Lua/Build/Intermediates/Lua.build/Debug-iphoneos/Lua.build/Objects-normal/arm64/wax_class.o

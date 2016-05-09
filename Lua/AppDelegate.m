@@ -12,7 +12,7 @@
 #import "ZipArchive.h"
 #import "ViewController.h"
 
-#define WAX_PATCH_URL @"http://raw.github.com/dakezuo/LUATest/tree/master/patch/patch.zip"
+#define WAX_PATCH_URL @"https://raw.githubusercontent.com/dakezuo/LUATest/master/patch/patch.zip"
 
 @interface AppDelegate ()
 
