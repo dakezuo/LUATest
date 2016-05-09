@@ -1,5 +1,5 @@
 waxClass{"ViewController",UIViewController}
-
+IBOutlet "label"
 -- function viewDidLoad(self)
 
 -- print(viewDidLoad)
