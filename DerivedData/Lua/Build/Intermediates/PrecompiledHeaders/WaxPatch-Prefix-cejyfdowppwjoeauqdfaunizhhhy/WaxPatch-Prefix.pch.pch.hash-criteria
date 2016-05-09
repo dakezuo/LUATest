@@ -1,0 +1,27 @@
+-x
+c
+-arch
+arm64
+-std=gnu99
+-fmodules
+-gmodules
+-fmodules-cache-path=/Users/dake/Desktop/LUATest/DerivedData/ModuleCache
+-fbuild-session-file=/Users/dake/Desktop/LUATest/DerivedData/ModuleCache/Session.modulevalidation
+-fpascal-strings
+-O0
+-fno-common
+-DDEBUG=1
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk
+-miphoneos-version-min=7.0
+-g
+-fembed-bitcode-marker
+-iquote
+-iquote
+-I/Users/dake/Desktop/LUATest/DerivedData/Lua/Build/Products/Debug-iphoneos/include
+-F/Users/dake/Desktop/LUATest/DerivedData/Lua/Build/Products/Debug-iphoneos
+-fno-objc-arc
+aarch64-apple-darwin15.3.0
+"4.2.1 Compatible Apple LLVM 7.3.0 (clang-703.0.29)"
+SDK_PRODUCT_BUILD_VERSION=13E230
+13E230
