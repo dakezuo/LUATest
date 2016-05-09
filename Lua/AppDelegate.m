@@ -39,7 +39,9 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[ViewController alloc] init];
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    ViewController *myView = [story instantiateViewControllerWithIdentifier:@"ViewController"];
+    self.window.rootViewController = myView;
     [self.window makeKeyAndVisible];
     
     [[[UIAlertView alloc] initWithTitle:nil message:@"有新的内容,点击立即更新" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil] show];
@@ -49,7 +51,8 @@
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    if(buttonIndex == [alertView firstOtherButtonIndex]) {
+    NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
+    if([title isEqualToString:@"确定"]) {
         // you probably want to change this url before run
         NSURL *patchUrl = [NSURL URLWithString:WAX_PATCH_URL];
         NSData *data = [NSURLConnection sendSynchronousRequest:[NSURLRequest requestWithURL:patchUrl] returningResponse:NULL error:NULL];
@@ -72,7 +75,9 @@
             wax_start("patch", nil);
             
             // reinit MainViewController again
-            self.window.rootViewController = [[ViewController alloc] init];
+            UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+            ViewController *myView = [story instantiateViewControllerWithIdentifier:@"ViewController"];
+            self.window.rootViewController = myView;
             [self.window makeKeyAndVisible];
         } else {
             [[[UIAlertView alloc] initWithTitle:nil message:[NSString stringWithFormat:@"更新失败 "] delegate:nil cancelButtonTitle:@"关闭" otherButtonTitles:nil] show];
