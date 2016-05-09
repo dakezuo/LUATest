@@ -53,6 +53,7 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
     if([title isEqualToString:@"确定"]) {
+        NSLog(@"111");
         // you probably want to change this url before run
         NSURL *patchUrl = [NSURL URLWithString:WAX_PATCH_URL];
         NSData *data = [NSURLConnection sendSynchronousRequest:[NSURLRequest requestWithURL:patchUrl] returningResponse:NULL error:NULL];
