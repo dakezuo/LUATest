@@ -36,7 +36,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="label" destination="8bC-Xf-vdC" id="mzZ-YB-mAI"/>
+                        <outlet property="label" destination="p6f-Li-NQk" id="wkc-Iy-FaB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

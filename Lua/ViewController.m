@@ -8,8 +8,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
-@property (strong, nonatomic) IBOutlet UIView *label;
 @end
 
 @implementation ViewController
