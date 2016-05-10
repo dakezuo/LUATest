@@ -32,7 +32,7 @@ self.super:viewDidLoad(self)
     label:setBackgroundColor(UIColor:colorWithRed_green_blue_alpha(0.545, 0.3, 1, 1))  
     label:setText("前方高能：")  
     label:setTextAlignment(UITextAlignmentCenter)  
-    self.view:addSubview(label)  
+    self:view():addSubview(label)  
 print(113)
 
 end
