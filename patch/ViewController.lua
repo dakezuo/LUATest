@@ -1,4 +1,5 @@
 waxClass{"ViewController",UIViewController}
+require "OneViewController"
 -- IBOutlet "label"
 -- function viewDidLoad(self)
 
@@ -12,7 +13,29 @@ print(112)
 self.super:viewDidLoad(self)
 	self:label():setBackgroundColor(UIColor:greenColor())
 	self:label():setText("我还有俩只视野,从来也不插0_0")
+
+    local evalButton = UIButton:buttonWithType(UIButtonTypeRoundedRect)
+
+   evalButton:setTitle_forState('Evaluate', UIControlStateNormal)
+
+    evalButton:setFrame(CGRect(200,142, 100, 32))
+
+   evalButton:addTarget_action_forControlEvents(self, 'eval:',
+
+                           UIControlEventTouchUpInside)
+
+   self.evalButton = evalButton
+
+   self:view():addSubview(self.evalButton)
 print(113)
+
+end
+
+function eval(self, sender)
+
+	local OneViewController = OneViewController:init()
+	self:navigationController():pushViewController(OneViewController)_animated(yes)
+   
 
 end
 

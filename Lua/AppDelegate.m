@@ -146,7 +146,7 @@
     //self.progressView.progress = 1.0 * self.currentLength/self.totalLength;
     float progress = (float)self.currentLength/self.totalLength;
     NSNumber* progressNumber = [NSNumber numberWithFloat:progress];
-    [self.progressView setProgress:[progressNumber floatValue] animated:NO];
+    [self.progressView setProgress:[progressNumber floatValue] animated:YES];
     /*
     dispatch_async(dispatch_get_main_queue(),^{
         NSLog(@"131");
