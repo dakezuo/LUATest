@@ -52,7 +52,7 @@ function eval(self, sender)
 
     local code,errmsg = loadstring(self.input:text()) 
 
-    if not codethen
+    if not code then
 
         self.output:setText(errmsg)
 
