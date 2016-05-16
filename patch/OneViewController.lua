@@ -66,7 +66,7 @@ function eval(self, sender)
 
     print('resultis ' .. tostring(result))
 
-    if not successthen
+    if not success then
 
        self.output:setText('Error: ' .. tostring(result))
 
