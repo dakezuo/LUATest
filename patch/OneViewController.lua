@@ -16,7 +16,7 @@ function init(self)
 
  
 
-    localevalButton = UIButton:buttonWithType(UIButtonTypeRoundedRect)
+    local evalButton = UIButton:buttonWithType(UIButtonTypeRoundedRect)
 
    evalButton:setTitle_forState('Evaluate', UIControlStateNormal)
 

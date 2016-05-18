@@ -33,8 +33,8 @@ end
 
 function eval(self, sender)
 
-	local OneViewController = OneViewController.init(OneViewController)
-	self:navigationController():pushViewController(OneViewController)_animated(yes)
+	local OneVC = OneViewController:init(OneVC)
+	self:navigationController():pushViewController(OneVC)_animated(yes)
    
 
 end
